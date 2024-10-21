@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+                                            <!-- ESTO ES EL HEADER -->
+    <header>
+        <div class="logo">
+            <a href="../PaginaPrincipal/index.html"><img src="logo.png" alt="Puro Humo Club"></a>
+        </div>
+        <div class="BarraBusqueda">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="header-buttons">
+            <a  href=""><img class="imagenesNavegador" src="https://th.bing.com/th/id/OIP.k3Nw17CLF-_QVJ1TUcNNiQAAAA?rs=1&pid=ImgDetMain" alt="Ayuda"></a>
+            <a href="#mi-cuenta"><img class="imagenesNavegador"  src="https://th.bing.com/th/id/OIP.mPHpaviDUpp2HlMK-KxskwHaHa?rs=1&pid=ImgDetMain" alt="Mi Cuenta"></a>
+            
+            <!-- Botón para abrir el carrito -->
+            <button class="boton-carrito" onclick="abrirCarrito()">
+                <img class="imagenesNavegador" src="https://i.pinimg.com/originals/d3/44/8e/d3448ef3e081d59992c31fefab5135d6.jpg" alt="Mi Carrito">
+            </button>
+        </div>
+    </header>
+    
+    <!-- Contenedor del carrito deslizante -->
+    <div id="carrito" class="carrito-container">
+        <div class="carrito-header">
+            <h2>Productos Agregados</h2>
+            <!-- Botón para cerrar el carrito -->
+            <button class="cerrar-carrito" onclick="cerrarCarrito()">x</button>
+        </div>
+    
+        <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <div class="producto-info">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="precio">$20.00</div>
+            <div class="cantidad">1</div>
+        </div>
+    
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div class="producto-info">
+                <h3>Producto 2</h3>
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="precio">$35.00</div>
+            <div class="cantidad">2</div>
+        </div>
+    
+        <div class="producto">
+            <img src="producto3.jpg" alt="Producto 3">
+            <div class="producto-info">
+                <h3>Producto 3</h3>
+                <p>Descripción breve del producto 3.</p>
+            </div>
+            <div class="precio">$12.00</div>
+            <div class="cantidad">3</div>
+        </div>
+    
+        <div class="total">
+            Total: $124.00
+        </div>
+    
+        <button class="boton-comprar">Finalizar Compra</button>
+    </div>
+    
+    <script>
+        // Función para abrir el carrito
+        function abrirCarrito() {
+            var carrito = document.getElementById('carrito');
+            carrito.classList.add('abierto');
+        }
+    
+        // Función para cerrar el carrito
+        function cerrarCarrito() {
+            var carrito = document.getElementById('carrito');
+            carrito.classList.remove('abierto');
+        }
+    </script>
+    <nav class="nav2">
+        <ul>
+            <li><a href="../PaginaPrincipal/index.html">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+                                    <!-- ESTO ES EL CONTENEDOR/MAIN -->
+    <main>
+        <div class="producto">
+            <div class="imagen-principal">
+                <!-- Aquí va la imagen del producto principal -->
+                <p>AQUI VA UNA IMAGEN</p>
+            </div>
+            <div class="info-producto">
+                <h2>INFO DEL PRODUCTO</h2>
+                <label for="sabor">Sabor:</label>
+                <select id="sabor">
+                    <option value="green-mango">Green Mango</option>
+                    <option value="otro-sabor">Otro Sabor</option>
+                </select>
+                <div class="cantidad">
+                    <button id="decrementar">-</button>
+                    <input type="number" id="cantidad" value="1" min="1" readonly>
+                    <button id="incrementar">+</button>
+                </div>
+                <button class="agregar-carrito">AGREGAR AL CARRITO</button>
+            </div>
+        </div>
+
+        <div class="productos-relacionados">
+            <h2>PRODUCTOS RELACIONADOS</h2>
+            <div class="relacionados">
+                <div class="producto-relacionado">
+                    <!-- Aquí va la imagen del producto relacionado 1 -->
+                    <p>AQUI VA UNA IMAGEN</p>
+                    <p>INFO PRODUCTO</p>
+                </div>
+                <div class="producto-relacionado">
+                    <!-- !-- Aquí va la imagen del producto relacionado 2 --> 
+                    <p>AQUI VA UNA IMAGEN</p>
+                    <p>INFO PRODUCTO</p>
+                </div>
+                <div class="producto-relacionado">
+                    <!-- Aquí va la imagen del producto relacionado 3 -->
+                    <p>AQUI VA UNA IMAGEN</p>
+                    <p>INFO PRODUCTO</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+                                <!-- ESTO ES EL FOOTER/PIE -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>CATEGORIAS</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>CONTACTANOS</h3>
+            <p><img src="AQUI_VA_LA_IMAGEN_DEL_TELEFONO" alt="Teléfono"> 123-456-7890</p>
+            <p><img src="AQUI_VA_LA_IMAGEN_DE_INSTAGRAM" alt="Instagram"> Puro.humo.club</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>UBICACIÓN</h3>
+            <p><img src="AQUI_VA_LA_IMAGEN_DE_LA_UBICACION" alt="Ubicación"> Córdoba, Argentina</p>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img class="ImgLogo" src="../Imagenes/Puro Humo.png" alt="Puro Humo Club"></a>
+        </div>
+        <div class="BarraBusqueda">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="header-buttons">
+            <a  href=""><img class="imagenesNavegador" src="https://th.bing.com/th/id/OIP.k3Nw17CLF-_QVJ1TUcNNiQAAAA?rs=1&pid=ImgDetMain" alt="Ayuda"></a>
+            <a href="#mi-cuenta"><img class="imagenesNavegador"  src="https://th.bing.com/th/id/OIP.mPHpaviDUpp2HlMK-KxskwHaHa?rs=1&pid=ImgDetMain" alt="Mi Cuenta"></a>
+            
+            <!-- Botón para abrir el carrito -->
+            <button class="boton-carrito" onclick="abrirCarrito()">
+                <img class="imagenesNavegador" src="https://i.pinimg.com/originals/d3/44/8e/d3448ef3e081d59992c31fefab5135d6.jpg" alt="Mi Carrito">
+            </button>
+        </div>
+    </header>
+    
+    <!-- Contenedor del carrito deslizante -->
+    <div id="carrito" class="carrito-container">
+        <div class="carrito-header">
+            <h2>Productos Agregados</h2>
+            <!-- Botón para cerrar el carrito -->
+            <button class="cerrar-carrito" onclick="cerrarCarrito()">×</button>
+        </div>
+    
+        <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <div class="producto-info">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto 1.</p>
+            </div>
+            <div class="precio">$20.00</div>
+            <div class="cantidad">1</div>
+        </div>
+    
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+            <div class="producto-info">
+                <h3>Producto 2</h3>
+                <p>Descripción breve del producto 2.</p>
+            </div>
+            <div class="precio">$35.00</div>
+            <div class="cantidad">2</div>
+        </div>
+    
+        <div class="producto">
+            <img src="producto3.jpg" alt="Producto 3">
+            <div class="producto-info">
+                <h3>Producto 3</h3>
+                <p>Descripción breve del producto 3.</p>
+            </div>
+            <div class="precio">$12.00</div>
+            <div class="cantidad">3</div>
+        </div>
+    
+        <div class="total">
+            Total: $124.00
+        </div>
+    
+        <button class="boton-comprar">Finalizar Compra</button>
+    </div>
+    
+    <script>
+        // Función para abrir el carrito
+        function abrirCarrito() {
+            var carrito = document.getElementById('carrito');
+            carrito.classList.add('abierto');
+        }
+    
+        // Función para cerrar el carrito
+        function cerrarCarrito() {
+            var carrito = document.getElementById('carrito');
+            carrito.classList.remove('abierto');
+        }
+    </script>
+    <nav class="nav2">
+        <ul>
+            <li><a href="../PaginaPrincipal/index.html">Inicio</a></li>
+            <li><a href="../PaginasProductos/PaginaProducto.html">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1 class="Titulo">PURO HUMO</h1>
+            <img class="ImagenPortada" src="../Imagenes/1-slide-1688733410966-4707819648-3913ba0a11329c5afc5e9d754e28e62e1688733411-1920-1920.webp"  alt="">
+        </section>
+    
+        <h4 class="ELFBAR">ELF BAR</h4>
+        <section class="ELFBAR">
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/ELFBAR/MIAMI MINT.jpg" alt=""></div>
+                <h2>ELF BAR - Miami Mint </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/ELFBAR/CRAZY BERRY ELFBAR.jpg" alt=""></div>
+                <h2>ELF BAR - Crazy Berry </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/ELFBAR/GUAVA ICE ELFBAR.jpg" alt=""></div>
+                <h2>ELF BAR - Guava ICE </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/ELFBAR/SOUT CANDY.jpg" alt=""></div>
+                <h2>ELF BAR - Sout Candy </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/ELFBAR/strawberry Pina Colada.jpg" alt=""></div>
+                <h2>ELF BAR - StrawBerry </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+        </section> 
+
+        <h4 class="GEEKBAR">GEEKBAR</h4
+            >
+        <section class="GEEKBAR">
+            
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/GEEKBAR/GEEK BAR.jpg" alt=""></div>
+                <h2>GEEK BAR - StrawBerry ICE </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/GEEKBAR/GEEK BAR 2.jpg" alt=""></div>
+                <h2>GEEK BAR - Sour Apple </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/GEEKBAR/GEEK BAR 3.jpg" alt=""></div>
+                <h2>GEEK BAR - Watermelon ICE </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/GEEKBAR/GEEEK BAR 4.jpg" alt=""></div>
+                <h2>GEEK BAR - Tropical Burst </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+            <div class="product">
+                <div class="product-image"><img class="ImagenesProductos" src="../Imagenes/GEEKBAR/GEEEK BAR 5.jpg" alt=""></div>
+                <h2>GEEK BAR - Berry incrementar </h2>
+                <p>Precio: $xxx ARS</p>
+            </div>
+        </section>    
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CATEGORIAS</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>CONTACTANOS</h3>
+                <p><img src="AQUI_VA_LA_IMAGEN_DEL_TELEFONO" alt="Teléfono"> 123-456-7890</p>
+                <p><img src="AQUI_VA_LA_IMAGEN_DE_INSTAGRAM" alt="Instagram"> Puro.humo.club</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>UBICACIÓN</h3>
+                <p><img src="AQUI_VA_LA_IMAGEN_DE_LA_UBICACION" alt="Ubicación"> Córdoba, Argentina</p>
+            </div>
+        </div>
+    </footer>
+   
+    
+    
+</body>
+</html>
